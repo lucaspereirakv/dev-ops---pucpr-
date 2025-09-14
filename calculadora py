@@ -2,7 +2,8 @@
 cont = 1
 
 while cont == 1:
-
+N1 = 1
+N2 = 2
     mult = n1*n2
     sub = n1-n2
     div = n1/n2
