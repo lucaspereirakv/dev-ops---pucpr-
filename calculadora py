@@ -13,3 +13,5 @@ elif opp == 3:
     print(div)
 elif opp == 4:
     print(soma)
+else: 
+    print("Operaçao inválida")
