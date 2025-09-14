@@ -19,4 +19,4 @@ jobs:
         python-version: '3.x'
     - name: Rodar testes
       run: |
-        python calculadora py.py
+        python calculadora.py
