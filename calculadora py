@@ -2,9 +2,8 @@
 cont = 1
 
 while cont == 1:
-    n1 = int(input("Digite o primeiro num"))
-    n2 = int(input("Digite o segundo num "))
-    opp = int(input("Digite 1 para soma, 2 para subtração, 3 para divisão, 4 para soma"))
+ 
+ 
     mult = n1*n2
     sub = n1-n2
     div = n1/n2
@@ -20,7 +19,7 @@ while cont == 1:
     else: 
         print("Operaçao inválida")
 
-    mais = int(input("Deseja fazer outra operação? (Y/N)"))
+    
     if mais == "N": 
         cont = 0
     elif mais == "Y": 
