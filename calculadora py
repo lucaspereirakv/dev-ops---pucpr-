@@ -23,3 +23,6 @@ while cont == 1:
     mais = int(input("Deseja fazer outra operação? (Y/N)"))
     if mais == "N": 
         cont = 0
+    elif mais == "Y": 
+        cont = 1
+    else: print("Opção inválida")
