@@ -1,0 +1,16 @@
+name: CD - Deploy da Calculadora
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Simular Deploy
+      run: |
+        echo "Iniciando o deploy do projeto..."
+        echo "Copiando o arquivo da calculadora para o servidor de produção..."
+        echo "Deploy concluído com sucesso!"
