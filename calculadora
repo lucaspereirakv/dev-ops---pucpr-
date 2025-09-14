@@ -1,28 +1,28 @@
+# calculadora.py
 
-cont = 1
+def soma(a, b):
+    return a + b
 
-while cont == 1:
-    n1 = int(input("Digite o primeiro num"))
-    n2 = int(input("Digite o segundo num "))
-    opp = int(input("Digite 1 para soma, 2 para subtração, 3 para divisão, 4 para soma"))
-    mult = n1*n2
-    sub = n1-n2
-    div = n1/n2
-    soma = n1+n2
-    if opp == 1:
-        print(mult)
-    elif opp == 2:
-        print(sub)
-    elif opp == 3:
-        print(div)
-    elif opp == 4:
-        print(soma)
-    else: 
-        print("Operaçao inválida")
+def subtrai(a, b):
+    return a - b
 
-    mais = int(input("Deseja fazer outra operação? (Y/N)"))
-    if mais == "N": 
-        cont = 0
-    elif mais == "Y": 
-        cont = 1
-    else: print("Opção inválida")
+def multiplica(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Erro: Divisão por zero!"
+    return a / b
+
+# Testes automáticos para o CI
+if __name__ == "__main__":
+    print("Executando testes da calculadora...")
+    assert soma(10, 5) == 15, "Soma está incorreta!"
+    print("✅ Teste de soma OK")
+    assert subtrai(10, 5) == 5, "Subtração está incorreta!"
+    print("✅ Teste de subtração OK")
+    assert multiplica(10, 5) == 50, "Multiplicação está incorreta!"
+    print("✅ Teste de multiplicação OK")
+    assert divide(10, 5) == 2, "Divisão está incorreta!"
+    print("✅ Teste de divisão OK")
+    print("\n🎉 Todos os testes foram concluídos com sucesso!")
