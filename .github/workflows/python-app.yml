@@ -22,5 +22,5 @@ jobs:
         python -m pip install --upgrade pip
     - name: Rodar testes
       run: |
-        find . -name "calculadora.py"
-        python ./calculadora.py
+        find . -name "calculadora"
+        python ./calculadora
