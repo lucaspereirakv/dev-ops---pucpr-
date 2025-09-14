@@ -1,0 +1,9 @@
+n1 = int(input("Digite o primeiro num"))
+n2 = int(input("Digite o segundo num "))
+opp = int(input("Digite 1 para soma, 2 para subtração"))
+mult = n1*n2
+sub = n1-n2
+if opp == 1:
+    print(mult)
+elif opp == 2:
+    print(sub)
