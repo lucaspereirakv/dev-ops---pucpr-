@@ -1,0 +1,23 @@
+# .github/workflows/discord-alerts.yml
+
+name: Notificações do Discord
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Notificar o Discord
+      if: always()
+      uses: sarisia/actions-status-discord@v1
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        status: ${{ job.status }}
+        title: "Status do Repositório: dev-ops---pucpr-"
